@@ -1,7 +1,7 @@
 
 /* Header component */
 .header{
-    margin: 50px;
+    margin: 2em;
     width: 50em;
     height: 30em;
     border-radius: 3em;
@@ -10,8 +10,15 @@
 }
 
 .header-items{
-    margin: 2em;
+    margin: 4em 2em;
 }
 .logo{
     margin: 1em 2em ;
+}
+h1 {
+    font-size: 3em;
+}
+h1, p{
+    font-family: 'Roboto';
+    
 }
