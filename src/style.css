@@ -2,11 +2,11 @@
 /* Header component */
 .header{
     margin: 50px;
-    border: 1px solid red;
     width: 50em;
     height: 30em;
     border-radius: 3em;
-    background-color: lightblue;
+    background-color: rgb(215, 242, 250);
+    background: transparent(0.9);
 }
 
 .header-items{
