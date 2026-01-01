@@ -20,3 +20,12 @@ export function calcBmiFromImperial({ heightFt, heightIn, weightSt, weightLb}){
 
     return (totalPounds / (totalInches * totalInches)) * 703;
 }
+
+export function healthyWeightRangeMetrics(heightCm){
+    const h = Number(heightCm) / 100;
+    if ( !isFinite(h) || h <= 0) return null;
+
+    const min = 18.5 * h * h;
+    const max = 24.9 * h * h;
+    return ( min, max);
+}
