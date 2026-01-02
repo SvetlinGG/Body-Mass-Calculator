@@ -1,5 +1,6 @@
+
 import { useMemo, useState } from "react";
-import { healthyWeightRangeMetrics, classifyBmi, calcBmiFromMetric, calcBmiFromImperial,  } from "../utils/bmi";
+import { healthyWeightRangeMetrics, classifyBmi, calcBmiFromMetric, calcBmiFromImperial,  } from "../utils/bmi.js";
 
 
 export function useBmi(){

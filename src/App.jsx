@@ -1,8 +1,8 @@
-import { useBmi } from "../hooks/useBmi.js";
-import UnitToggle from "../components/bmi/UnitToggle.jsx";
-import MetricInputs from "../components/bmi/MetricInputs.jsx";
-import ImperialInputs from "../components/bmi/ImperialInputs.jsx";
-import ResultPanel from "../components/bmi/ResultPanel.jsx";
+import { useBmi } from "./hooks/useBmi.js";
+import UnitToggle from "./components/bmi/UnitToggle.jsx";
+import MetricInputs from "./components/bmi/MetricInputs.jsx";
+import ImperialInputs from "./components/bmi/ImperialInputs.jsx";
+import ResultPanel from "./components/bmi/ResultPanel.jsx";
 
 export default function App() {
   const bmiState = useBmi();
