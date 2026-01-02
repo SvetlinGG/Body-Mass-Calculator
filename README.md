@@ -1,12 +1,84 @@
-# React + Vite
+# Body Mass Index Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive BMI calculator built with React and Vite. Calculate your Body Mass Index and get health insights with both metric and imperial unit support.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dual Unit Support**: Switch between metric (cm/kg) and imperial (ft/in/st/lb) measurements
+- **Real-time Calculation**: BMI updates instantly as you type
+- **Health Classification**: Get your BMI category (Underweight, Healthy, Overweight, Obese)
+- **Healthy Weight Range**: See your ideal weight range for metric measurements
+- **Responsive Design**: Works perfectly on desktop and mobile devices
+- **Modern UI**: Clean, gradient-based design with smooth interactions
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **CSS3** - Styling with custom properties and gradients
+- **JavaScript ES6+** - Modern JavaScript features
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd Body-Mass-Calculator
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and visit `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── Components/
+│   └── bmi/
+│       ├── UnitToggle.jsx      # Metric/Imperial toggle
+│       ├── MetricInputs.jsx    # Height/Weight inputs (metric)
+│       ├── ImperialInputs.jsx  # Height/Weight inputs (imperial)
+│       └── ResultPanel.jsx     # BMI result display
+├── hooks/
+│   └── useBmi.js              # BMI calculation logic
+├── utils/
+│   └── bmi.js                 # BMI utility functions
+├── styles/
+│   ├── globals.css            # Global styles
+│   └── tokens.css             # CSS custom properties
+├── App.jsx                    # Main app component
+└── main.jsx                   # App entry point
+```
+
+## BMI Categories
+
+- **Underweight**: BMI < 18.5
+- **Healthy Weight**: BMI 18.5 - 24.9
+- **Overweight**: BMI 25 - 29.9
+- **Obese**: BMI ≥ 30
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
