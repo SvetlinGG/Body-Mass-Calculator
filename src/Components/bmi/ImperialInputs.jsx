@@ -53,9 +53,11 @@ export default function ImperialInputs({ value, onChange }){
                         style={inputStyle} 
                         value={value.weightLb}
                         onChange={(e) => set({ weightLb: e.target.value})}
+                        inputMode="numeric"
+                        placeholder="0"
                      />
                 </label>
             </div>
         </div>
-    )
+    );
 }
