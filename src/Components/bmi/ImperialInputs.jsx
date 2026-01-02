@@ -1,5 +1,5 @@
 
-export default function Imperialinputs({ value, onChange }){
+export default function ImperialInputs({ value, onChange }){
     const set = (patch) => onChange((s) => ({...s, ...patch}));
 
     const inputStyle = {
