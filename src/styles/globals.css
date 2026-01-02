@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--text);
+  background: var(--bg);
+  overflow-x: hidden; /* важен guard */
+}
+
+img { max-width: 100%; display: block; }
+
+a, button, input { font: inherit; }
+
+.container{
+  width: min(var(--container), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.card{
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
