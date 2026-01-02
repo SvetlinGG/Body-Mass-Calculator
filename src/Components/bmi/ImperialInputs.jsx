@@ -34,6 +34,18 @@ export default function ImperialInputs({ value, onChange }){
                         />
                 </label>
             </div>
+
+            <div style={{display: 'grid',gridTemplateColumns: '1fr 1fr', gap: '0.75rem'}} >
+                <label style={{display: 'grid', gap: '0.35rem'}} >
+                    <span style={{color: 'var(--muted)', fontSize: '0.9rem'}} >Weight (st)</span>
+                    <input 
+                        style={inputStyle}
+                        value={value.weightSt}
+                        onChange={(e) => set({ weightSt: e.target.value})}
+                        inputMode="numeric"
+                        placeholder="0" />
+                </label>
+            </div>
         </div>
     )
 }
