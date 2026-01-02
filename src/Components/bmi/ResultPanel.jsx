@@ -1,5 +1,4 @@
 function round1(n){
-
     return Math.round(n * 10) / 10;
 }
 
@@ -7,35 +6,28 @@ export default function ResultPanel({ unit, bmi, classification, healthyRange, m
      const hasResult = bmi != null && isFinite(bmi);
 
      return (
-        <div 
-            style={{
-                background: 'linear-gradient(90deg, var(--primary), #587dff',
-                color: 'white',
-                borderRadius: '18px',
-                padding: '1.1rem',
-            }}
-        >
+        <div className="result-panel">
             {!hasResult ? (
                 <>
-                <h2 style={{ margin: 0}}>Welcome</h2>
-                <p style={{ margin: '0.35rem 0 0', opacity: 0.9}}>
-                Enter your height and weight and you’ll see your BMI result here.
+                <h2>Welcome</h2>
+                <p>
+                Enter your height and weight and you'll see your BMI result here.
                 </p>
                 </>
             ) : (
                 <>
-                <div style={{ display: 'grid', gap: '0.35rem'}} >
-                    <div style={{ opacity: 0.95}} >Your BMI is...</div>
-                    <div style={{ fontSize: '2.4rem', fontWeight: 800, lineHeight: 1}} >
+                <div className="bmi-result">
+                    <div className="bmi-label">Your BMI is...</div>
+                    <div className="bmi-value">
                         {round1(bmi)}
                     </div>
-                    <div style={{ opacity: 0.95}} >
+                    <div className="bmi-classification">
                         {classification?.label ?? '-'}
                     </div>
                 </div>
 
                 {unit === 'metric' && healthyRange && metricHeightCm ? (
-                    <p style={{ margin: '0.8rem 0 0', opacity: 0.95}} >
+                    <p className="healthy-range">
                         Your healthy weight range is between {" "}
                         <strong>
                             {Math.round(healthyRange.min)}kg - {Math.round(healthyRange.max)}kg
@@ -45,7 +37,6 @@ export default function ResultPanel({ unit, bmi, classification, healthyRange, m
                 ) : null}
                 </>
             )}
-
         </div>
      );
 }

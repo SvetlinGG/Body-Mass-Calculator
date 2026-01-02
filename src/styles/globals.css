@@ -210,3 +210,54 @@ a, button, input { font: inherit; }
     width: 100%;
   }
 }
+
+/* Result Panel Styles */
+.result-panel {
+  background: linear-gradient(90deg, var(--primary), #587dff);
+  color: white;
+  border-radius: 18px;
+  padding: 1.1rem;
+}
+
+.result-panel h2 {
+  margin: 0;
+  color: white;
+}
+
+.result-panel p {
+  margin: 0.35rem 0 0;
+  opacity: 0.9;
+  color: white;
+}
+
+.bmi-result {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.bmi-label {
+  opacity: 0.95;
+  color: white;
+}
+
+.bmi-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: white;
+}
+
+.bmi-classification {
+  opacity: 0.95;
+  color: white;
+}
+
+.healthy-range {
+  margin: 0.8rem 0 0;
+  opacity: 0.95;
+  color: white;
+}
+
+.healthy-range strong {
+  color: white;
+}
