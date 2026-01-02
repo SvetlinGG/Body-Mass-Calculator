@@ -1,6 +1,6 @@
 
 import { useMemo, useState } from "react";
-import { healthyWeightRangeMetrics, classifyBmi, calcBmiFromMetric, calcBmiFromImperial,  } from "../utils/bmi.js";
+import { healthyWeightRangeMetric, classifyBmi, calcBmiFromMetric, calcBmiFromImperial,  } from "../utils/bmi.js";
 
 
 export function useBmi(){
@@ -24,7 +24,7 @@ export function useBmi(){
 
     const healthyRange = useMemo(() => {
         if (unit !== 'metric') return null;
-        return healthyWeightRangeMetrics(metric.heightCm)
+        return healthyWeightRangeMetric(metric.heightCm)
     }, [unit, metric.heightCm]);
 
     return {
