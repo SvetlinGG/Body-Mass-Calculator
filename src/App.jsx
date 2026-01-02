@@ -1,4 +1,3 @@
-
 import { useBmi } from "../hooks/useBmi.js";
 import UnitToggle from "../components/bmi/UnitToggle.jsx";
 import MetricInputs from "../components/bmi/MetricInputs.jsx";
@@ -45,4 +44,3 @@ export default function App() {
     </div>
   );
 }
-
