@@ -1,5 +1,5 @@
 # Body Mass Index Calculator
-Live-Demo: https://willowy-sunburst-406ccb.netlify.app/
+Live-Demo: https://body-mass-index-health.netlify.app/
 
 A modern, responsive BMI calculator built with React and Vite. Calculate your Body Mass Index and get health insights with both metric and imperial unit support.
 
