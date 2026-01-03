@@ -27,12 +27,12 @@ a, button, input { font: inherit; }
   box-shadow: var(--shadow);
 }
 
-/* App Layout */
+
 .app {
   min-height: 100vh;
 }
 
-/* Hero Section */
+
 .hero {
   background: linear-gradient(135deg, #d6e7ff 0%, rgba(214, 252, 254, 0.5) 100%);
   min-height: 100vh;
@@ -97,7 +97,7 @@ a, button, input { font: inherit; }
   height: auto;
 }
 
-/* BMI Meaning Section */
+
 .bmi-meaning {
   padding: 4rem 0;
   background: var(--surface);
